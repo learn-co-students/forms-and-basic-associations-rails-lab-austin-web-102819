@@ -13,7 +13,7 @@ class SongsController < ApplicationController
     # parameter names to be used by accepts_nested_attributes_for
     # See:
     # https://api.rubyonrails.org/v5.2.3/classes/ActionView/Helpers/FormHelper.html#method-i-fields_for
-    3.times { @song.notes.build }
+    2.times { @song.notes.build }
   end
 
   def create

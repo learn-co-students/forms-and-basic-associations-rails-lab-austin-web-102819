@@ -3,6 +3,8 @@ class Song < ActiveRecord::Base
   belongs_to :artist
   belongs_to :genre
   has_many :notes
+  #added this to allow the the params to be accepted
+  accepts_nested_attributes_for :notes
 
   # This method allows us to set an artist name
   def artist_name=(name)
